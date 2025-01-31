@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fence By Spence</title>
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <h1>Fence by Spence</h1>
+    <h2>
+        Local Fence Installation at an Affordable Price
+    </h2>
+    <h3>
+        I specialize in installing quality aluminum fence. I service the Salt Lake Area but will also travel further if necessary. 
+        If you're interested in my services please reach out via email or by phone. 
+        I'm happy to give a free estimate.
+    </h3>
+    <nav class="nav-bar">
+        <ul> <!-- ul is an unorderd list -->
+            <li> <a href="home.html">Home</a></li>
+            <li> <a href="products.html">Products</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul> 
+    </nav>
+
+    <section class="container">
+        <div class="text-section">
+            <div class="about-myself">
+                <p>As the sole owner and employee of the company I can assure you that every job while take precedence and be completed in a timely manner.
+                Everyone knows that the best work is completed when the boss is on the jobsite -- luckily for you that just so happens to be myself.
+    
+                I have a passion for building and seeing a project through from start to finish. 
+                With 5+ years of experience in gate, fence, and rail installation in the Greater Pittsburgh region I'm happy to take my talents and my passion to service the Greater Salt Lake Area
+    
+                I work closely with my suppliers to ensure that I use the best materials while delivering a great price.
+                Due to my low overhead I'm confident I can undercut the competitions prices -- Dont believe me? Schedule an estimate now and see for yourself!
+
+                <br>
+                <br>Schedlue an estimate today at
+                <br>walkersl0209@gmail.com OR
+                <br>724-841-5522
+
+                </p>
+                <p style="margin-top: 20px;">
+               
+                </p>
+            </div>
+            <!-- <div class="contact-section-flex-box">CONTACT INFO PLACEHOLDER</div> -->
+        </div>
+
+        <!--Slideshow section-->
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide1" src="{{ url_for('static', filename='images/aluminum_fence_slide_1.jpg')}}" alt="aluminum fence panels">
+                <img id="slide2" src="{{ url_for('static', filename='images/aluminum_fence_slide_2.jpg')}}" alt="aluminum fence panels">
+                <img id="slide3" src="{{ url_for('static', filename='images/aluminum_fence_slide_3.jpg')}}" alt="aluminum fence panels">
+                <img id="slide4" src="{{ url_for('static', filename='images/aluminum_fence_slide_4.jpg')}}" alt="aluminum fence panels">
+                <img id="slide5" src="{{ url_for('static', filename='images/aluminum_fence_slide_5.jpg')}}" alt="aluminum fence panels">
+                <img id="slide6" src="{{ url_for('static', filename='images/aluminum_fence_slide_6.jpg')}}" alt="aluminum fence panels">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+                <a href="#slide4"></a>
+                <a href="#slide5"></a>
+                <a href="#slide6"></a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h4>
+            Schedule an estimate <a href="https://http://127.0.0.1:8080/views.contacts.html" target="_blank">here</a>
+        </h4>
+    </main>
+    </div>
+</body>
+</html>

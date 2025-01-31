@@ -1,0 +1,212 @@
+/*
+    File: index.css (subject to change)
+    Author: Spencer Walker
+    Date 01/08/2025
+    Description: Style sheet for the home page
+    Last updated date: 01/08/2025
+
+*/
+
+body {
+    background-color: wheat;
+    margin: 0px;
+    background-image: url('/static/images/fence-by-spence-background.jpg');
+    background-size: contain;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 250%;
+    margin-top: 5px;
+    margin: 5px auto; /* Centers the element horizontally */
+    color: #2c3e50; /* A deep, professional blue */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+    letter-spacing: 1px; /* Adds space between letters for readability */
+    padding: 10px; /* Adds some space around the text */
+    background: linear-gradient(to right, wheat, wheat); /* Subtle gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: wheat;
+    border-radius: 10px; /* Rounds the edges of the background */
+    display: block; /* Ensures the element behaves like a block for centering */
+    width: fit-content; /* Shrinks the box to fit the text */
+}
+
+h3 {
+    text-align: center;
+    margin: 10px auto; /* Add some breathing room */
+    width: 50%;
+    font-size: medium;
+    padding: 15px; /* Adds space inside the text box */
+    background-color: wheat; /* Keeps the wheat background */
+  }
+
+h4 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.nav-bar {
+    text-align: center;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.nav-bar a:hover{
+    background-color: black;
+}
+
+.nav-bar li{
+    float: left;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2rem;
+    align-items: stretch;
+    /* flex-direction: column; */
+}
+
+.about-myself, .slider-wrapper {
+    flex: 1;
+    display: flex;
+    flex: column;
+    padding: 1rem;
+    min-height: 300px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+/* Styling for the placeholders */
+.about-myself {
+    background-color: wheat;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-myself h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    flex-basis: 1 0 200px;
+}
+
+.about-myself p1 {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.about-myself p2 {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    padding: 10%;
+}
+
+.slider-wrapper {
+  position: relative;
+    max-width: 48rem;
+    margin: auto;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider { 
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+/*
+    can be disregarded until later
+*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;  /* Stack sections vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .slider-wrapper {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

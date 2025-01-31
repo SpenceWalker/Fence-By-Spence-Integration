@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    background-color: wheat;
+    /* background-image: url('/static/images/fence-by-spence-background.jpg'); */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /*Default value is row*/
+    justify-content: space-around;
+    align-items: baseline;
+} 
+
+
+.nav-bar {
+    text-align: center;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.nav-bar a:hover{
+    background-color: black;
+}
+
+.nav-bar li{
+    float: left;
+    text-align: center;
+}
